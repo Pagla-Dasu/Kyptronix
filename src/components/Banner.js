@@ -10,9 +10,8 @@ const Banner = () => {
         <motion.img
           src="/about.webp"
           alt="about"
-          className="md:w-1/2"
-          initial={{ x: -500 }}
-          animate={{ x: 0 }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         />
         <motion.h4
