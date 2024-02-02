@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div>
       <NavBar />
-      <div>
+      <div className="pt-24">
         <div className="px-48 py-36 max-md:px-12 max-md:py-24">
           <div className="text-sm bg-yellow-100 w-36 rounded-full text-center px-2 py-3 mb-4 text-yellow-700 font-bold">
             ABOUT US
