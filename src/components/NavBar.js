@@ -12,7 +12,9 @@ const NavBar = () => {
   return (
     <div className="fixed top-0 left-0 w-full shadow-lg bg-white rounded-lg">
       <div className="flex justify-between items-center p-2 md:p-4">
-        <img src="/logo.webp" alt="logo" width={100} />
+        <NavLink to="/">
+          <img src="/logo.webp" alt="logo" width={100} />
+        </NavLink>
         <div className="md:hidden">
           <button onClick={toggleMenu} aria-label="Toggle Menu">
             {isOpen ? (
@@ -23,7 +25,10 @@ const NavBar = () => {
           </button>
         </div>
         <div className={`md:flex md:space-x-8 ${isOpen ? "block" : "hidden"}`}>
-          <NavLink to="/about" className="md:mb-4">
+          <NavLink
+            to="/about"
+            className="md:mb-4 inline-block hover:border-b-2 hover:border-red-400 transition-colors duration-300 ease-in-out"
+          >
             About Us
           </NavLink>
           <div>Contact</div>
